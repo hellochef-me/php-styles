@@ -1,0 +1,16 @@
+{
+  "name": "hellochef-me/php-styles",
+  "description": "HelloChef shared PHP style rules for PHP-CS-Fixer",
+  "license": "MIT",
+  "require": {
+    "friendsofphp/php-cs-fixer": "^3.0"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest"
+  },
+  "autoload": {
+    "files": [
+      ".php-cs-fixer.php"
+    ]
+  }
+}
