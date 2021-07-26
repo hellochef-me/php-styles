@@ -9,8 +9,8 @@
     "roave/security-advisories": "dev-latest"
   },
   "autoload": {
-    "files": [
-      ".php-cs-fixer.php"
-    ]
+    "psr-4": {
+      "HelloChef\\CodeStyles\\": "/"
+    }
   }
 }
