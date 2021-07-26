@@ -3,7 +3,7 @@
 Shared PHP style rules for PHP-CS-Fixer
 
 Install 
-> composer require hellochef-me/php-styles --dev
+> composer require hellochef-me/php-styles
  
 Create and setup config file `.php-cs-fixer`
 
