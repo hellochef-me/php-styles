@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "Running pre-commit hook"
+
+if [ ! -f "vendor/bin/php-cs-fixer" ]; then
+    echo "Error: vendor/bin/php-cs-fixer not found! Run composer install"
+    exit 1
+fi
+
+while read -r STAGED_FILES; do
+    if [[ $STAGED_FILES == *.php ]]; then
+        vendor/bin/php-cs-fixer fix "$STAGED_FILES" -v --using-cache=no
+        git add "$STAGED_FILES"
+    fi
+done < <(git diff --cached --name-status --diff-filter=ACM | awk '{print $2}')
