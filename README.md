@@ -8,7 +8,7 @@ Install the package
 composer require hellochef-me/php-styles
 ```
 
-Create and setup config file `.php-cs-fixer`
+Create and setup config file in project root `.php-cs-fixer.php`
 
 ```php
 <?php
@@ -16,7 +16,18 @@ Create and setup config file `.php-cs-fixer`
 return HelloChef\CodeStyles\PhpStyles::style();
 ```
 
+### Format code on demand
+
+Format the whole project
+
+> vendor/bin/php-cs-fixer fix .
+
+Format specific file
+
+> vendor/bin/php-cs-fixer fix `FILE-TO-FORMAT.php`
+
 ### Format code on commit
+
 Add the following scripts to your `composer.json`
 
 ```json
@@ -27,7 +38,7 @@ Add the following scripts to your `composer.json`
     ],
     "post-install-cmd": [
       "cp vendor/hellochef-me/php-styles/pre-commit .git/hooks/pre-commit",
-     "chmod a+x .git/hooks/pre-commit"
+      "chmod a+x .git/hooks/pre-commit"
     ],
 },
 ```
