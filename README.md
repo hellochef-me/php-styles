@@ -18,13 +18,17 @@ return HelloChef\CodeStyles\PhpStyles::style();
 
 ### Format code on demand
 
-Format the whole project
+- Format the whole project
 
-> vendor/bin/php-cs-fixer fix .
+```bash
+vendor/bin/php-cs-fixer fix .
+```
 
-Format specific file
+- Format specific file
 
-> vendor/bin/php-cs-fixer fix `FILE-TO-FORMAT.php`
+```bash
+vendor/bin/php-cs-fixer fix `FILE-TO-FORMAT.php`
+```
 
 ### Format code on commit
 
