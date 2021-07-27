@@ -5,9 +5,6 @@
 	"require": {
 		"friendsofphp/php-cs-fixer": "^3.0"
 	},
-	"require-dev": {
-		"roave/security-advisories": "dev-latest"
-	},
 	"autoload": {
 		"psr-4": {
 			"HelloChef\\CodeStyles\\": "/"
