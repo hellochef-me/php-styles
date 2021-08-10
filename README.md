@@ -16,6 +16,12 @@ Create and setup config file in project root `.php-cs-fixer.php`
 return HelloChef\CodeStyles\PhpStyles::style();
 ```
 
+Optionally, you may add php-cs-fixer cache file to your `.gitignore`
+```
+// .gitignore
+.php-cs-fixer.cache
+```
+
 ### Format code on demand
 
 - Format the whole project
