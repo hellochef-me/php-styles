@@ -33,7 +33,7 @@ vendor/bin/php-cs-fixer fix .
 - Format specific file
 
 ```bash
-vendor/bin/php-cs-fixer fix `FILE-TO-FORMAT.php`
+vendor/bin/php-cs-fixer fix Path/To/ExampleFileToFormat.php
 ```
 
 ### Format code on commit
