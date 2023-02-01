@@ -2,6 +2,10 @@
 
 Shared PHP style rules for PHP-CS-Fixer
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/hellochef-me/php-styles.svg?style=flat-square)](https://packagist.org/packages/hellochef-me/php-styles)
+[![Total Downloads](https://img.shields.io/packagist/dt/hellochef-me/php-styles.svg?style=flat-square)](https://packagist.org/packages/hellochef-me/php-styles)
+[![MIT Licensed](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+
 Install the package
 
 ```bash
